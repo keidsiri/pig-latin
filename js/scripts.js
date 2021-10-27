@@ -26,6 +26,7 @@ function consonant (string) {
 }
 
 
+
 function pigLatin(string) {
   const stringArr = string.toLowerCase().split("");
   if (stringArr[0] === "a" || stringArr[0] === "e" || stringArr[0] === "i" || stringArr[0] === "o" || stringArr[0] === "u") {
