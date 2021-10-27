@@ -37,12 +37,15 @@ function pigLatin(string) {
   }
 }
 
-function quMove(string) {
-  for (let i = 0; i < string.length; i++) {
-      if (string.includes("qu")){
-          string = string.substring(i) + string.substring(0,i);
-          console.log(string);
-      }                                          
-  }
-  return string;
-}
+
+
+
+// function quMove(string) {
+//   for (let i = 0; i < string.length; i++) {
+//       if (string.includes("qu")){
+//           string = string.substring(i) + string.substring(0,i);
+//           console.log(string);
+//       }                                          
+//   }
+//   return string;
+// }
