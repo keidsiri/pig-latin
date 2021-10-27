@@ -62,31 +62,37 @@ Describe: Write a Pig Latin translator or should we say an "igPay atinLay anslat
 Test: "It will determine if it's empty string or not"
 Code: pigLatin("");
 Expected Output: false (not the empty string)
-
-Test: "It will take text from the user and split it into an array"
-Code: pigLatin("This is text");
-Expected Output: "["This", "is", "text"]"
+X
 
 Test: "It will recognize a consonant or vowel as the first letter of a word"
 Code: pigLatin("true");
 Expected Output: "consonant as first letter"
+X
 
 Test: "If the word starts with a vowel, then it will add 'way' to the end of the word."
 Code: pigLatin("away");
 Expected Output: "awayway"
+X
 
 Test: "For words beginning with one or more consonants. It will recognize multiple consonants at the beginning of a word"
 Code: pigLatin("true");
 Expected Output: true
+X
 
 Test: "It will move consonants before the first consonant in the word to the end of the word, but before adding 'ay' to the end of the word"
 Code: pigLatin("code");
 Expected Output: "odec"
+X
 
 Test: "It will add 'ay' to the end of words that begin with one or more consonants."
 Code: pigLatin("code");
 Expected Output: "odecay"
+X
 
 Test: "If the word starts with 'qu' or contain 'qu', it will move 'qu' and consonants before qu to the end of the word and add "ay"
 Code: pigLatin("quality", "squeal" , "ealsquay.");
 Expected Output: "alityquay" 
+
+Test: "It will take text from the user and split it into an array"
+Code: pigLatin("This is text");
+Expected Output: "["This", "is", "text"]"
